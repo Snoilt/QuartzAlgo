@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+    <channel>
+      <title>Quartz 4</title>
+      <link>https://quartz.jzhao.xyz</link>
+      <description>Last 10 notes on Quartz 4</description>
+      <generator>Quartz -- quartz.jzhao.xyz</generator>
+      <item>
+    <title>ADT - Abstrakte Datentypen</title>
+    <link>https://quartz.jzhao.xyz/ADT---Abstrakte-Datentypen</link>
+    <guid>https://quartz.jzhao.xyz/ADT---Abstrakte-Datentypen</guid>
+    <description>algo ADT bestehen aus Objekten und darauf definierten Funktionen Realisierung vor User verborgen Beispiele Stack Queue Beispiele Python set list class .</description>
+    <pubDate>Sat, 05 Jul 2025 12:05:31 GMT</pubDate>
+  </item><item>
+    <title>Big O notation</title>
+    <link>https://quartz.jzhao.xyz/Big-O-notation</link>
+    <guid>https://quartz.jzhao.xyz/Big-O-notation</guid>
+    <description>algo O(1) Super schnell Array-Zugriff, Hashmaps O(log n) Sehr schnell Binäre Suche O(n) Okay für mittlere Daten Lineare Suche O(n log n) Bestes, was du für Sortieren bekommst Merge Sort, Quick Sort O(n²) Langsam as fuck Bubble Sort, Nested Loops O(2ⁿ) Unbenutzbar für große Daten Rekursive Fibonacci ...</description>
+    <pubDate>Sat, 05 Jul 2025 12:05:31 GMT</pubDate>
+  </item><item>
+    <title>Breitensuche</title>
+    <link>https://quartz.jzhao.xyz/Breitensuche</link>
+    <guid>https://quartz.jzhao.xyz/Breitensuche</guid>
+    <description>algo Code Beispiel graph = { &quot;A&quot;: [&quot;B&quot;, &quot;C&quot;], &quot;B&quot;: [&quot;D&quot;, &quot;E&quot;] } from collections import deque def bfs(graph, start): visited = set() queue = deque([start]) while queue: node = queue.popleft() if node not in visited: print(node) visited.add(...</description>
+    <pubDate>Sat, 05 Jul 2025 12:05:31 GMT</pubDate>
+  </item><item>
+    <title>Datenstrukturen</title>
+    <link>https://quartz.jzhao.xyz/Datenstrukturen</link>
+    <guid>https://quartz.jzhao.xyz/Datenstrukturen</guid>
+    <description>algo grundsätzliche Realisierung (Speicherung und Organisation) der Objektmeine eines ADT - Abstrakte Datentypen bestimmen Eigenschaften zum Zugriff und der Verwaltung der Daten Beispiele für Datenstrukturen Verkettete Listen (einfach/doppelt verkettet) Gerichtete Bäume Hashtabellen .</description>
+    <pubDate>Sat, 05 Jul 2025 12:05:31 GMT</pubDate>
+  </item><item>
+    <title>Deque - double ended queue</title>
+    <link>https://quartz.jzhao.xyz/Deque---double-ended-queue</link>
+    <guid>https://quartz.jzhao.xyz/Deque---double-ended-queue</guid>
+    <description>algo Bei dieser linearen Liste gilt lediglich die Restriktion, dass Operationen wie das Einfügungen und Löschen von Elementen an einem (der beiden) Enden durchgeführt wird .</description>
+    <pubDate>Sat, 05 Jul 2025 12:05:31 GMT</pubDate>
+  </item><item>
+    <title>Divisionsmethode</title>
+    <link>https://quartz.jzhao.xyz/Divisionsmethode</link>
+    <guid>https://quartz.jzhao.xyz/Divisionsmethode</guid>
+    <description>algo Hashfunktion für einen Schlüssel k mit einer Tabelle mit m Slots Funktion h(k) = k \ mod \ m Beispiel m = 20 k = 91 → h(k) = 11 Vorteile Leicht zu berechnen Nachteile Gefahr wenn m=2^p In dem Falle ist ist h(k) nur von 2 niederwertigen Bits von k abhängig → Dadurch werden Werte den gleichen Sch...</description>
+    <pubDate>Sat, 05 Jul 2025 12:05:31 GMT</pubDate>
+  </item><item>
+    <title>Hashtabellen</title>
+    <link>https://quartz.jzhao.xyz/Hashtabellen</link>
+    <guid>https://quartz.jzhao.xyz/Hashtabellen</guid>
+    <description>algo Dynamische Mengen mit einer begrenzten Anzahl an Elementen verwalten ADT - Abstrakte Datentypen Jeder Slot enthält entweder den Schlüssel k oder NIL Komplexität der Operationen INSERT DELETE → O(1) SEARCH(worst case) → O(n) Alternative zu Verkettung Idee Statt Speicherung des Elements mit Schlü...</description>
+    <pubDate>Sat, 05 Jul 2025 12:05:31 GMT</pubDate>
+  </item><item>
+    <title>Insert-sort</title>
+    <link>https://quartz.jzhao.xyz/Insert-sort</link>
+    <guid>https://quartz.jzhao.xyz/Insert-sort</guid>
+    <description>algo Bei vorsortierten Arrays/Listen effizient Big O Notation Best Case: O(n) → feld schon sortiert Bewertung Vorteile Stabil Kein Zusätzlicher Speicher nötig Gut für kleine Arrays Nachteile Worst Case: O(n^2) → Feld absteigend Viele Schreiboperationen Ablauf Python Code def insertionsort(arr): n=le...</description>
+    <pubDate>Sat, 05 Jul 2025 12:05:31 GMT</pubDate>
+  </item><item>
+    <title>Klausuraufgaben Algo</title>
+    <link>https://quartz.jzhao.xyz/Klausuraufgaben-Algo</link>
+    <guid>https://quartz.jzhao.xyz/Klausuraufgaben-Algo</guid>
+    <description>algo Frage 1 F Frage 2 B Frage 3 G Frage 4 G → Schröter hat sich vertippt da soll stabiler stehen.</description>
+    <pubDate>Sat, 05 Jul 2025 12:05:31 GMT</pubDate>
+  </item><item>
+    <title>Max-Heapify</title>
+    <link>https://quartz.jzhao.xyz/Max-Heapify</link>
+    <guid>https://quartz.jzhao.xyz/Max-Heapify</guid>
+    <description>algo Code Beispiel import math def LEFT(i): return 2 * i + 1 def RIGHT(i): return 2 * i + 2 def maxHeapify(A, i, n): l = LEFT(i) r = RIGHT(i) largest = i if l &lt; n and A[l] &gt; A[i]: largest = l if r &lt; n and A[r] &gt; A[largest]: largest = r if largest != i: A[i], A[largest] = A[largest], A[i]...</description>
+    <pubDate>Sat, 05 Jul 2025 12:05:31 GMT</pubDate>
+  </item>
+    </channel>
+  </rss>
