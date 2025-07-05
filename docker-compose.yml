@@ -2,13 +2,8 @@ version: "3.8"
 
 services:
   quartz:
-    # ⇢ Portainer lädt den Build-Kontext direkt aus Git,
-    #    jeder Force-Rebuild holt also den neuesten Commit, digga
-    build:
-      context: https://github.com/Snoilt/QuartzAlgo.git   # <–– remote Git-URL!
-      dockerfile: Dockerfile
-      pull: true                       # zieht immer das frische Base-Image
+    image: ghcr.io/snoilt/quartzalgo:latest  # zieht neuen Digest automatisch
     container_name: quartz-site
     ports:
-      - "9441:8080"                    # host:container, digga
-    restart: unless-stopped            # steht wieder auf wie ’n Zombie
+      - "9441:8080"
+    restart: unless-stopped
