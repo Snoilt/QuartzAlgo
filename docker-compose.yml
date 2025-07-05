@@ -2,14 +2,24 @@ version: "3.8"
 
 services:
   quartz:
-    # baut das Image direkt aus deinem Repo-Root
+    # Baue das Image aus deinem Repo-Root
     build:
       context: .
       dockerfile: Dockerfile
+    # Tag das fertige Image
     image: quartz-site:latest
     container_name: quartz-site
-    ports:
-      - "9441:8080"       # host:container
+
+    # Override des Start-Kommandos, damit der Server auf 8080 läuft
+    command: ["npx", "quartz", "build", "--serve", "--port", "8080"]
+
+    # Mount dein Content-Verzeichnis als Read-Only
     volumes:
       - ./content:/usr/src/app/content:ro
-    restart: always       # bei Crash oder Host-Reboot automatisch neu starten
+
+    # Mapp den Host-Port 9441 auf Container-Port 8080
+    ports:
+      - "9441:8080"
+
+    # Auto-Restart bei Crash oder Host-Reboot
+    restart: always
