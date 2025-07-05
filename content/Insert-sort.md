@@ -1,0 +1,1 @@
+/Users/burger/Obsidian/Brain/Brain/UNI/Algorithmen und Datenstrukturen/Insert-sort.md
