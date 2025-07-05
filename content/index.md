@@ -37,6 +37,8 @@ description: "Indexseite für Quartz"
 ---
 
 **Suchen**  
+- [[Binärer Suchbaum]]
+- 
 - [[Naive-String-Matching]]  
 - [[Rabin-Karp-Algorithmus]]  
 - [[Breitensuche]]  
