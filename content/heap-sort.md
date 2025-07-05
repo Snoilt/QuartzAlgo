@@ -1,3 +1,0 @@
-#uni/algo
-> Bildet aus Array einen [[Heap]]
-> Nimmt größtes also erstes Element aus Array und packt ans Ende, Heaped Array nochmal...
