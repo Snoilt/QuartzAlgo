@@ -1,3 +1,4 @@
+#uni/algo
 >**Verkettung** ist eine Methode zur *Kollisionsauflösung* in Hashtabellen.
 >
 >Wenn mehrere Schlüssel denselben Hashwert ergeben (also eine Kollision auftritt), werden sie in einer **verketteten Liste** (z. B. eine einfach verkettete Liste) am entsprechenden Slot gespeichert.  
