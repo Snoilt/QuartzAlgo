@@ -2,24 +2,12 @@ version: "3.8"
 
 services:
   quartz:
-    # Baue das Image aus deinem Repo-Root
+    # baut das Image direkt aus deinem Repo-Root
     build:
       context: .
       dockerfile: Dockerfile
-    # Tag das fertige Image
-    image: quartz-site:latest
     container_name: quartz-site
-
-    # Override des Start-Kommandos, damit der Server auf 8080 läuft
-    command: ["npx", "quartz", "build", "--serve", "--port", "8080"]
-
-    # Mount dein Content-Verzeichnis als Read-Only
-    volumes:
-      - /home/p/contata/QuartzAlgo/content:/usr/src/app/content:ro
-
-    # Mapp den Host-Port 9441 auf Container-Port 8080
     ports:
-      - "9441:8080"
+      - "9441:8080"       # host:container
 
-    # Auto-Restart bei Crash oder Host-Reboot
-    restart: always
+    restart: always       # bei Crash oder Host-Reboot automatisch neu starten
