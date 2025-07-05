@@ -1,0 +1,15 @@
+version: "3.8"
+
+services:
+  quartz:
+    # baut das Image direkt aus deinem Repo-Root
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: quartz-site:latest
+    container_name: quartz-site
+    ports:
+      - "9441:8080"       # host:container
+    volumes:
+      - ./content:/usr/src/app/content:ro
+    restart: always       # bei Crash oder Host-Reboot automatisch neu starten
