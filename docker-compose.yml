@@ -2,12 +2,15 @@ version: "3.8"
 
 services:
   quartz:
-    # baut das Image direkt aus deinem Repo-Root
+    # ballert bei jedem Rebuild den neuesten Stand rein, digga
     build:
       context: .
       dockerfile: Dockerfile
+      pull: true                       # holt frisches Base-Image, digga
+      args:
+        - COMMIT_SHA=${COMMIT_SHA:-dev}  # zwingt neuen Layer, digga
+    image: snoilt/quartz:${COMMIT_SHA:-dev}
     container_name: quartz-site
     ports:
-      - "9441:8080"       # host:container
-
-    restart: always       # bei Crash oder Host-Reboot automatisch neu starten
+      - "9441:8080"     # host:container, digga
+    restart: unless-stopped           # steht wieder auf nach’m Crash, digga
