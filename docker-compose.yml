@@ -15,7 +15,7 @@ services:
 
     # Mount dein Content-Verzeichnis als Read-Only
     volumes:
-      - ./content:/usr/src/app/content:ro
+      - /home/p/contata/QuartzAlgo/content:/usr/src/app/content:ro
 
     # Mapp den Host-Port 9441 auf Container-Port 8080
     ports:
